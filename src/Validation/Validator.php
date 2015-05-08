@@ -15,9 +15,9 @@
 namespace Cake\Validation;
 
 use ArrayAccess;
+use Cake\Utility\Hash;
 use Cake\Validation\RulesProvider;
 use Cake\Validation\ValidationSet;
-use Cake\Utility\Hash;
 use Countable;
 use IteratorAggregate;
 
@@ -549,8 +549,8 @@ class Validator implements ArrayAccess, IteratorAggregate, Countable
      * from executing them
      *
      * @param string $field The name of the field that is being processed
-     * @param ValidationSet $rules the list of rules for a field
      * @param mixed $value The field value.
+     * @param ValidationSet $rules the list of rules for a field
      * @param array $data the full data passed to the validator
      * @param bool $newRecord whether is it a new record or an existing one
      * @return array
